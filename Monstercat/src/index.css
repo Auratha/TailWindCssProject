@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-image{
+  height: 100vh;
+  background-image: url("https://cdx.monstercat.com?encoding=webp&url=https%3A%2F%2Fwww.monstercat.com%2Frelease%2FMCLP017%2Fcover%3F2ee434f2-4499-4c30-a937-4aec2b4ac1fc&width=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  filter:blur(5px);
+  filter: brightness(38%);
+  
+
+}
+
+@layer base {
+    @font-face {
+      font-family: 'MonumentExtended';
+      font-style: normal;
+      font-weight: normal;
+      font-display: swap;
+      src: url(./assets/font/MonumentExtended-Regular.otf) format('opentype');
+    }
+  }
+
