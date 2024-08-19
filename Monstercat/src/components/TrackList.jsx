@@ -43,17 +43,17 @@ const SongList = () => {
   return musicData.map((song) => {
     return (
       <div className="mt-4 flex justify-between" id={song.id}>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2 sm:space-x-4">
           <p>{song.id}</p>
           <img src={playLogo} className="cursor-pointer" alt="play" />
           <div>
-            <h6 className="text-sm">{song.name}</h6>
-            <p className="text-xs">{song.artist}</p>
+            <h6 className="text-[10px] sm:text-sm">{song.name}</h6>
+            <p className="text-[10px] sm:text-xs">{song.artist}</p>
           </div>
         </div>
-        <div className="flex items-center space-x-4">
-          <p>{song.time}</p>
-          <img src={shareLogo} alt="share" />
+        <div className="flex items-center space-x-2 sm:space-x-4">
+          <p className="text-xs sm:text-sm">{song.time}</p>
+          <img className="cursor-pointer" src={shareLogo} alt="share" />
         </div>
       </div>
     );
@@ -62,7 +62,7 @@ const SongList = () => {
 
 const TrackList = () => {
   return (
-    <div className="px-8 mt-8">
+    <div className="px-8 mt-12 lg:mt-20 z-0 md:w-[80%] md:mx-auto">
       <h1 className="text-2xl">TRACK LIST</h1>
       <div className="space-y-6">
         <SongList />
